@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Attendance Management System
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Quicksand', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    header
+      h2
+        a(href='#') Attendance Management System
+      nav
+        li
+          a(href='#') Students Corner
+        li
+          a(href='#') About
+        li
+          a(href='#') Contact
+    section.login
+      .background-image(style='background-image: url(assets/back.jpg);')
+      section.login_box
+        h2 Login
+        form
+          select(name='Login As')
+            option(value='Student') Student
+            option(value='Staff') Staff
+            option(value='Admin') Admin
+          input(type='email', placeholder='Email')
+          input(type='password', placeholder='Password')
+        a.btn(href='#') Submit
+        a(href='#') Forgot Password?
+    footer
